@@ -16,6 +16,6 @@ variable "build_tool" {
 
   validation {
     condition     = contains(["gradle", "java"], var.build_tool)
-    error_message = "Allowed values for input_parameter are \"gradle\", \"java\""
+    error_message = "Allowed values for build_tool are \"gradle\", \"java\"."
   }
 }
