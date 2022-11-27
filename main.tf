@@ -20,6 +20,7 @@ resource "random_pet" "app_name" {}
 resource "heroku_app" "app" {
   name   = random_pet.app_name.id
   region = "eu"
+  stack = "heroku-22"
 
   sensitive_config_vars = var.dream_env
   buildpacks            = ["heroku/${var.build_tool}"]
