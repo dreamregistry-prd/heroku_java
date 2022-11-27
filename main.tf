@@ -5,7 +5,7 @@ terraform {
   required_providers {
     heroku = {
       source  = "registry.terraform.io/heroku/heroku"
-      version = "~> 5.0.2"
+      version = "~> 5.1.6"
     }
 
     random = {
