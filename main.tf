@@ -40,7 +40,7 @@ resource "heroku_formation" "app" {
   app_id     = heroku_app.app.id
   type       = "web"
   quantity   = 1
-  size       = "free"
+  size       = "eco"
   depends_on = [heroku_build.app]
 }
 
